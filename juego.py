@@ -57,6 +57,7 @@ def jugando():
                         objetos.pantalla.blit(objetos.perdiste_texto,(395,250))
                         objetos.pantalla.blit(objetos.texto.render(f'tu puntuacion fue: {objetos.puntaje}',1,objetos.blanco),(350,300))
                         objetos.pantalla.blit(objetos.urban,(800,400))
+                        objetos.pantalla.blit(objetos.texto.render(f'ESPACIO para reiniciar',1,objetos.blanco),(345,450))
                         teclas = pygame.key.get_pressed()
                         pygame.display.flip()
                         for evento in pygame.event.get():
